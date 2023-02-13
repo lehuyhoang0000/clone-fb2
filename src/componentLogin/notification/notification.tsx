@@ -13,10 +13,10 @@ import iconfb10 from '../../asset/icon-fb/logout.png';
 
 import './notification.css';
 
-let click= document.getElementById('dropdown-menu');
+let click = document.getElementById('dropdown-menu');
 const toggleMenu = () => {
   click?.classList.toggle('open-menu')
-}
+};
 
 function Notification() {
   return (
@@ -28,7 +28,7 @@ function Notification() {
             <button className="btn" onClick={toggleMenu}>
               <img src={iconfb} alt="" />
             </button>
-            <div id='dropdown-menu' className="dropdown-fb">
+            <div id="dropdown-menu" className="dropdown-fb">
               <div className="dropdown-top">
                 <div className="dropdown-top-name">
                   <a className="link-top" href="">

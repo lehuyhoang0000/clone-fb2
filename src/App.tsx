@@ -8,6 +8,7 @@ import AuthProtect from 'components/Common/AuthProtect';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '@mui/material';
 import { authActions } from 'features/auth/authSlice';
+import DashBroad from 'componentLogin/Stock DashBroad';
 
 function App() {
   const dispatch = useDispatch();

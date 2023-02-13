@@ -8,6 +8,7 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import '@fontsource/roboto/300.css';
 import { CssBaseline } from '@mui/material';
+import DashBroad from 'componentLogin/Stock DashBroad';
 // import { ConnectedRouter } from 'connected-react-router';
 // import { history } from 'utils/history';
 
@@ -19,6 +20,7 @@ root.render(
     <BrowserRouter>
       <CssBaseline />
       <App />
+      <DashBroad />
     </BrowserRouter>
   </Provider>
 );
