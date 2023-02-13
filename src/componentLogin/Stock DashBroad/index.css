@@ -154,6 +154,7 @@ h4 {
   justify-content: space-between;
   position: relative;
   border-radius: 8px;
+  margin-right: 14px;
 }
 .nivida {
   width: 209px;
@@ -254,12 +255,14 @@ h4 {
 }
 .balance-mt {
   display: flex;
+  justify-content: space-between;
+  margin-right: 14px;
 }
 
 .balance {
-  width: 340px;
+  width: 33.3%;;
   height: 100%;
-  margin-left: 33px;
+  margin-left: 20px;
   background-color: white;
   border-radius: 8px;
   margin-top: 20px;
@@ -426,54 +429,230 @@ h4 {
   height: 26px;
 }
 
-.btn-year:hover{
+.btn-year:hover {
   color: rgba(100, 37, 254, 1);
   border-bottom: 1px solid rgba(100, 37, 254, 1);
 }
-.scribble{
-  border: 1px solid rgba(131, 131, 131, 0.5) ;
+.scribble {
+  border: 1px solid rgba(131, 131, 131, 0.5);
 }
-.chart-number{
+.chart-number {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
-.chart-number span{
+.chart-number span {
   color: rgba(131, 131, 131, 1);
 }
-.chart-nasv{
+.chart-nasv {
   display: flex;
   justify-content: space-between;
   margin: 0 12px;
   margin-top: 20px;
 }
-.chart-time{
+.chart-time {
   margin-top: 12px;
   display: flex;
   margin-right: 12px;
   flex-direction: row-reverse;
 }
-.time{
+.time {
   width: 35%;
   text-align: right;
   color: rgba(131, 131, 131, 1);
-
 }
-.high-open{
+.high-open {
   display: flex;
   margin: 0 12px;
   margin-top: 23px;
+  height: 74px;
 }
-.high-open .high:first-child{
+.high-open .high:first-child {
   margin-right: 86px;
 }
-.high{
+.high {
   display: flex;
   flex-direction: column;
+}
+.high span:first-child {
+  color: rgba(131, 131, 131, 1);
+  margin-bottom: 4px;
+}
+.snap-open {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 16px;
+}
+.snap-high {
+  /* margin-right: 50px; */
+  width: 60%;
+}
+.line-blue {
+  border: 1px solid rgba(232, 233, 255, 1);
+  margin: 20px 12px;
+}
+.line-pink {
+  border: 3px solid rgba(248, 165, 255, 1);
+  border-radius: 4px;
+  margin: 8px 12px;
+  position: relative;
+}
+
+.line-black {
+  border: 3px solid rgba(44, 44, 44, 1);
+  position: absolute;
+  height: 20px;
+  border-radius: 4px;
+  right: 80px;
+  bottom: -10px;
+}
+
+.line-black-number {
+  right: 50px;
+  bottom: -30px;
+  position: absolute;
+  /* margin-bottom: 20px; */
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.high-open-snap {
+  display: flex;
+  margin: 0 12px;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+.snap-after {
+  margin-top: 70px;
+}
+.blue-after {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.snap-trade-time {
+  display: flex;
+  margin: 0 12px;
+  /* justify-content: space-between; */
+  height: 70px;
+}
+.trade-time {
+  /* margin-right: 80px; */
+  width: 60%;
+}
+.mb-4 {
+  margin-bottom: 4px;
+  color: #838383;
+}
+/* footer */
+.footer-por-watch {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 14px;
+  margin-top: 20px;
+}
+.portfoio {
+  width: 68%;
+  padding-top: 25px;
+  padding-left: 15px;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.portfoio-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.por-time {
+  width: 50%;
+}
+.chart-money {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.chart-violet {
+  width: 90%;
+  border-bottom: 1px solid #cecccc;
+}
+.chart-violet img {
+  width: 100%;
+}
+.money-violet {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  justify-content: space-between;
+}
+.por-time-violet {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.por-time span {
+  color: #838383;
+}
+.watchlish {
+  padding-top: 20px;
+  padding-left: 11px;
+  padding-right: 11px;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-left: 20px;
+  width: 33.3%;
 
 }
-.high span:first-child{
-  color:rgba(131, 131, 131, 1);
-  margin-bottom: 4px;
+.plus{
+  border: none;
+  background-color: #6425FE;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+.watchlish-btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+}
+.amazon{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-bottom: 1px solid #E8E9FF;
+  padding-bottom: 16px;
+}
+.amazon-name{
+  display: flex;
+  flex-direction: column;
+}
+.amazon-name span:last-child{
+  color: #838383;
+}
+.amzon-money{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.amzon-money span:last-child{
+  color: #77B900;
+}
+.coca-money span:last-child{
+  color: #E8464C;
+}
+.service-money span:last-child{
+  color: #E8464C;
+}
+.db-flex{
+  display: flex;
+}
+.db-flex img{
+  margin-right: 4px;
 }

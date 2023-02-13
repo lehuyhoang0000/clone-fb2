@@ -26,6 +26,14 @@ import downArrow from '../../asset/my stock/arrow-down.svg';
 import teslaMotor from '../../asset/my stock/tesla-motors-1 1.svg';
 import chartInveted from '../../asset/my stock/chart inveted.svg';
 import chartNasv from '../../asset/my stock/chart nasv.svg';
+import chartViolet from '../../asset/my stock/chart-por.svg';
+import plus from '../../asset/my stock/plus.svg';
+import amazon from '../../asset/my stock/amazon-icon-1 1.svg';
+import coca from '../../asset/my stock/coca-cola-6 1.svg';
+import bmw from '../../asset/my stock/bmw 1.svg';
+import microsoft from '../../asset/my stock/microsoft 1.svg';
+import service from '../../asset/my stock/service.svg';
+import mastercard from '../../asset/my stock/mastercard-2 1.svg';
 
 import './index.css';
 
@@ -354,22 +362,22 @@ export default function DashBroad() {
                   <span className="time">11 am</span>
                   <span className="time">10 am</span>
                 </div>
-                <div className='high-open'>
-                  <div className='high'>
+                <div className="high-open">
+                  <div className="high">
                     <span>High</span>
                     <span>11,691.89</span>
                   </div>
-                  <div className='high'>
+                  <div className="high">
                     <span>Prev close (Avr 28 Days)</span>
                     <span>11,512.41</span>
                   </div>
                 </div>
-                <div className='high-open'>
-                  <div className='high'>
+                <div className="high-open">
+                  <div className="high">
                     <span>Low</span>
                     <span>11,470.47</span>
                   </div>
-                  <div className='high'>
+                  <div className="high">
                     <span>Open</span>
                     <span>11,690.11</span>
                   </div>
@@ -377,11 +385,68 @@ export default function DashBroad() {
               </div>
               <div className="balance">
                 <div className="balance-header">
-                  <div className="btn-exchanges">
-                  Snapshot
-                  </div>
+                  <div className="btn-exchanges">Snapshot</div>
                 </div>
                 <div className="balance-header">
+                  <div className="snap-open">
+                    <div className="high snap-high">
+                      <span>Prev Close</span>
+                      <span>12,051.48</span>
+                    </div>
+                    <div className="high">
+                      <span>Open</span>
+                      <span>12.000.21</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="line-blue"></div>
+                <div className="high-open-snap">
+                  <div className="high">
+                    <span>11,999.87</span>
+                    <span>Day Low</span>
+                  </div>
+                  <div className="high">
+                    <span>12,248.15</span>
+                    <span>Day High</span>
+                  </div>
+                </div>
+                <div className="line-pink">
+                  <div className="line-black"></div>
+                  <div className="line-black-number">12.166.60</div>
+                </div>
+                <div className="high-open-snap snap-after">
+                  <div className="high">
+                    <span>10,440.64</span>
+                    <span>52 Week Low</span>
+                  </div>
+                  <div className="high">
+                    <span>15,265.42</span>
+                    <span>52 Week High </span>
+                  </div>
+                </div>
+                <div className="line-pink">
+                  <div className="line-black"></div>
+                  <div className="line-black-number">12.166.60</div>
+                </div>
+                <div className="line-blue blue-after"></div>
+                <div className="snap-trade-time">
+                  <div className="trade-time">
+                    <div className="mb-4">Trade Time</div>
+                    <div>05:16 PM</div>
+                  </div>
+                  <div>
+                    <div className="mb-4">Trade Date</div>
+                    <div>01/27/23</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="footer-por-watch">
+            <div className="portfoio">
+              <div className="portfoio-header">
+                <div>Portfolio Analytics</div>
+                <div className="balance-header por-time">
                   <div className="btn-exchanges-year">
                     <button className="btn-year">1D</button>
                     <div className="scribble"></div>
@@ -392,48 +457,124 @@ export default function DashBroad() {
                     <button className="btn-year">6M</button>
                     <div className="scribble"></div>
                     <button className="btn-year">1Y</button>
+                    <div className="scribble"></div>
+                    <button className="btn-year">5Y</button>
+                    <div className="scribble"></div>
+                    <button className="btn-year">Max</button>
                   </div>
                 </div>
-                <div className="chart-nasv">
-                  <div className="chart-number">
-                    <span>11,700</span>
-                    <span>11,650</span>
-                    <span>11,600</span>
-                    <span>11,550</span>
+              </div>
+              <div className="chart-money">
+                <div className="chart-violet">
+                  <img src={chartViolet} alt="" />
+                </div>
+                <div className="money-violet">
+                  <span>$15000</span>
+                  <span>$12000</span>
+                  <span>$9000</span>
+                  <span>$6000</span>
+                  <span>$3000</span>
+                  <span>0</span>
+                </div>
+              </div>
+              <div className="por-time-violet">
+                <span>10 am</span>
+                <span>11 am</span>
+                <span>12 pm</span>
+                <span>12 pm</span>
+                <span>12 pm</span>
+                <span>12 pm</span>
+              </div>
+            </div>
+            <div className="watchlish">
+              <div className="watchlish-btn">
+                <div>Watchlist</div>
+                <button className="plus">
+                  <img src={plus} alt="" />
+                </button>
+              </div>
+              <div className="watch-Investors">
+                <div className="amazon">
+                  <div className='db-flex'>
+                    <img src={amazon} alt="" />
+                    <div className="amazon-name">
+                      <span>Amazon.com, Inc. </span>
+                      <span>AMZN</span>
+                    </div>
                   </div>
-                  <div>
-                    <img src={chartNasv} alt="" />
+                  <div className="amzon-money">
+                    <span>$102.24</span>
+                    <span>+3.02</span>
                   </div>
                 </div>
-                <div className="chart-time">
-                  <span className="time">12 am</span>
-                  <span className="time">11 am</span>
-                  <span className="time">10 am</span>
-                </div>
-                <div className='high-open'>
-                  <div className='high'>
-                    <span>High</span>
-                    <span>11,691.89</span>
+                <div className="amazon">
+                  <div className='db-flex'>
+                    <img src={coca} alt="" />
+                    <div className="amazon-name">
+                      <span>Coca-Cola Co </span>
+                      <span>KO </span>
+                    </div>
                   </div>
-                  <div className='high'>
-                    <span>Prev close (Avr 28 Days)</span>
-                    <span>11,512.41</span>
+                  <div className="amzon-money coca-money">
+                    <span>$60.49</span>
+                    <span>−0.32</span>
                   </div>
                 </div>
-                <div className='high-open'>
-                  <div className='high'>
-                    <span>Low</span>
-                    <span>11,470.47</span>
+                <div className="amazon">
+                  <div className='db-flex'>
+                    <img src={bmw} alt="" />
+                    <div className="amazon-name">
+                      <span>Bayerische Motoren Werke AG </span>
+                      <span>BMW</span>
+                    </div>
                   </div>
-                  <div className='high'>
-                    <span>Open</span>
-                    <span>11,690.11</span>
+                  <div className="amzon-money">
+                    <span>$92.94</span>
+                    <span>+0.59</span>
+                  </div>
+                </div>
+                <div className="amazon">
+                  <div className='db-flex'>
+                    <img src={microsoft} alt="" />
+                    <div className="amazon-name">
+                      <span>Microsoft Corp </span>
+                      <span>MSFT</span>
+                    </div>
+                  </div>
+                  <div className="amzon-money">
+                    <span>$248.16</span>
+                    <span>+0.16</span>
+                  </div>
+                </div>
+                <div className="amazon">
+                  <div className='db-flex'>
+                    <img src={service} alt="" />
+                    <div className="amazon-name">
+                      <span>United Parcel Service, Inc. </span>
+                      <span>UPS</span>
+                    </div>
+                  </div>
+                  <div className="amzon-money">
+                    <span>$182.09</span>
+                    <span>+2.39</span>
+                  </div>
+                </div>
+                <div className="amazon">
+                  <div className='db-flex'>
+                    <img src={mastercard} alt="" />
+                    <div className="amazon-name">
+                      <span>Mastercard Inc </span>
+                      <span>MA</span>
+                    </div>
+                  </div>
+                  <div className="amzon-money service-money">
+                    <span>$374.03</span>
+                    <span>−3.21</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div>Portfolio Analytics</div>
         </div>
       </div>
     </div>
