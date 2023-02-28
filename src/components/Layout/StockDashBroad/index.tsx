@@ -1,9 +1,9 @@
-import user1 from '../../asset/Vector.svg';
-import user2 from '../../asset/Vector (1).svg';
+import user1 from '../../../asset/Vector.svg';
+import user2 from '../../asset/Vector 1.svg';
 import user3 from '../../asset/Group.svg';
-import user4 from '../../asset/material-symbols_wallet-sharp.svg';
-import user5 from '../../asset/Vector (2).svg';
-import user6 from '../../asset/Vector (3).svg';
+import user4 from '../../asset/../material-symbols_wallet-sharp.svg';
+import user5 from '../../../asset/Vector 2.svg';
+import user6 from '../../asset/Vector 3.svg';
 import user7 from '../../asset/carbon_machine-learning-model.svg';
 import lightBuldBg from '../../asset/Union-bg.svg';
 import lightBuld from '../../asset/light bulb.svg';
@@ -26,7 +26,7 @@ import downArrow from '../../asset/my stock/arrow-down.svg';
 import teslaMotor from '../../asset/my stock/tesla-motors-1 1.svg';
 import chartInveted from '../../asset/my stock/chart inveted.svg';
 import chartNasv from '../../asset/my stock/chart nasv.svg';
-import chartViolet from '../../asset/my stock/chart-por.svg';
+import chartViolet from '../../../asset/my stock/chart-por.svg';
 import plus from '../../asset/my stock/plus.svg';
 import amazon from '../../asset/my stock/amazon-icon-1 1.svg';
 import coca from '../../asset/my stock/coca-cola-6 1.svg';
@@ -34,7 +34,6 @@ import bmw from '../../asset/my stock/bmw 1.svg';
 import microsoft from '../../asset/my stock/microsoft 1.svg';
 import service from '../../asset/my stock/service.svg';
 import mastercard from '../../asset/my stock/mastercard-2 1.svg';
-
 import './index.css';
 
 export default function DashBroad() {

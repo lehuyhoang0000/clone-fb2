@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, useState } from 'react';
 import iconfb0 from '../../asset/icon-fb/right-arrow.png';
 import iconfb from '../../asset/icon-fb/Lê Huy Hoàng.png';
 import iconfb2 from '../../asset/icon-fb/notification.png';
@@ -14,18 +14,21 @@ import iconfb10 from '../../asset/icon-fb/logout.png';
 import './notification.css';
 
 let click = document.getElementById('dropdown-menu');
-const toggleMenu = () => {
-  click?.classList.toggle('open-menu')
-};
+// const toggleMenu = () => {
+//   // console.log('click')
+//   click?.classList.toggle('open-menu')
+// };
+
 
 function Notification() {
+  const [show, setShow] = useState(true)
   return (
     <div className="flex-notification">
       <ul>
         <li>
           <span className="title-homepage">Tài khoản</span>
           <span className="">
-            <button className="btn" onClick={toggleMenu}>
+            <button className="btn" onClick={() => setShow(!show)}>
               <img src={iconfb} alt="" />
             </button>
             <div id="dropdown-menu" className="dropdown-fb">
